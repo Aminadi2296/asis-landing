@@ -1,0 +1,35 @@
+---
+import asistenteRobot from '../assets/robot.svg?url';
+---
+
+<section class="p-5 h-screen w-screen overflow-hidden">
+  <div
+    class="relative bg-gradient-to-r from-black to-blue-800 h-[calc(100vh-2.5rem)] w-[calc(100vw-2.5rem)] rounded-3xl overflow-hidden"
+  >
+    <video
+      autoplay
+      muted
+      loop
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="/videos/chat.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
+    <h1 class="font-extrabold text-white text-7xl relative text-right">
+      Acelera tu productividad
+    </h1>
+    <img
+      src={asistenteRobot}
+      alt="Imagen de robot asistente virtual"
+      class="relative h-[700px] bottom-0 z-30"
+    />
+  </div>
+  <div
+    class="absolute bottom-0 right-0 w-[520px] h-[270px] bg-white rounded-tl-3xl"
+  >
+    <div
+      class="absolute bottom-4 right-4 w-[480px] h-[230px] bg-green-500 rounded-3xl"
+    >
+    </div>
+  </div>
+</section>
